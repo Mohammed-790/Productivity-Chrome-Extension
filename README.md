@@ -1,26 +1,26 @@
 # Productivity Chrome Extension with ReactJS
 
-A Chrome extension to improve user productivity on the browser built with ReactJS.
+A Chrome extension to enhance user productivity on the browser, built with ReactJS.
 
-Steps to install
+## Installation Steps
+1. Clone the repository.
+2. Run `npm install` to install dependencies.
+3. Build the extension using `npm run build`.
+4. Open `chrome://extensions` in your browser.
+5. Enable "Developer mode" by toggling the switch.
+6. Click "Load unpacked" and select the `build` folder.
+7. Your extension should now appear in the extensions list.
+8. When browsing, open the extension to view the time spent on each website.
+9. Switching to a new tab pauses the timer on the previous tab.
 
-- Clone the repository.
-- `npm install`  - To install dependencies
-- `npm run build`  - To build the extension inside the build folder.
-- Go to chrome://extensions and inside select the “Load unpacked” option.
-- Before that make sure you toggle the "Developer mode" option.
-- Upload the build folder; ideally, you should see your extension in the list.
-- In your extensions list, you should see your new local extension.
-- When you open a website, open your extension; ideally, you should have the time spent on each website in the form of a list.
-- Switching to a new tab should pause the time on the first tab.
+## Functionality
+- Tracks time spent on each website.
+- Displays a cat image instead of website content when the timer limit is exceeded.
 
-Based on the timer set, if your time goes beyond that set timer, you should see a cat image instead of the actual DOM content. 
-
-Further optimizations:
-- Add a reset feature every day at night.
+## Future Enhancements
+- Implement an automatic daily reset feature.
 - Add a manual reset button.
-- Stop calculating time spent after it has breached the timer. (Hint: You need to stop the interval inside the App component conditionally for that domain)
-  
-![Screenshot 2024-08-11 080739](https://github.com/user-attachments/assets/05af51dc-ca96-4c55-82db-2fad1b8f13a0)
+- Stop time tracking once the timer limit is breached.
 
-  
+![Screenshot](https://github.com/user-attachments/assets/05af51dc-ca96-4c55-82db-2fad1b8f13a0)
+
